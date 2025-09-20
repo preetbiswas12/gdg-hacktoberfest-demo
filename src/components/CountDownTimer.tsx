@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import "./styles/CountdownTimer.css";
+import "./styles/CountDownTimer.css";
 
 const RELEASE_DATE = new Date("2025-10-01T00:00:00");
 
