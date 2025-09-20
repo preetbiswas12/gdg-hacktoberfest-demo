@@ -8,7 +8,7 @@ Welcome to the **Google Developer Groups (GDG) Hacktoberfest Demo Website**! �
 
 ## 🌐 Live Demo
 
-🔗 [GDG Hacktoberfest Demo](https://gdg-hacktoberfest-.vercel.app/) 
+🔗 [GDG Hacktoberfest Demo](https://hacktoberfest-gdg.vercel.app/) 
 
 ---
 
