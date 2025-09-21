@@ -134,6 +134,10 @@ button[type="submit"]:disabled {
     text-align: center;
   }
   
+  .left-section h2::after {
+    transform: translateX(-70%);
+  }
+  
   .left-section p {
     font-size: 0.85rem;
     text-align: center;
@@ -171,6 +175,10 @@ button[type="submit"]:disabled {
   .left-section h2 {
     font-size: 2rem;
     text-align: center;
+  }
+  
+  .left-section h2::after {
+    transform: translateX(-70%);
   }
   
   .left-section p {
@@ -211,6 +219,10 @@ button[type="submit"]:disabled {
     font-size: 1.9rem;
     text-align: center;
     line-height: 1.2;
+  }
+  
+  .left-section h2::after {
+    transform: translateX(-70%);
   }
   
   .left-section p {

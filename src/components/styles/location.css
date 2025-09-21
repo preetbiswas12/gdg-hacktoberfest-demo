@@ -208,6 +208,11 @@
     max-width: none;
   }
 
+  .left-box {
+    min-height: 300px; /* Match desktop height */
+    height: 300px; /* Fixed height like desktop */
+  }
+
   .left-box,
   .top-box,
   .bottom-box {
@@ -219,8 +224,35 @@
   }
 
   .box-png {
-    width: 100%;
-    height: auto;
+    width: 400px; /* Maintain decent size */
+    height: 200px; /* Maintain aspect ratio */
+  }
+  
+  .left-box .box-png {
+    transform: translateX(-50%) scale(1.0);
+  }
+}
+
+/* Extra mobile specific adjustments */
+@media (max-width: 480px) {
+  .left-box {
+    min-height: 280px;
+    height: 280px;
+  }
+  
+  .box-png {
+    width: 350px;
+    height: 180px;
+  }
+  
+  .right-text-container {
+    min-height: 200px;
+    padding: 1rem;
+  }
+  
+  .right-text-container span {
+    font-size: 1.1em !important;
+    line-height: 1.4;
   }
 }
 
