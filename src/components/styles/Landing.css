@@ -252,7 +252,52 @@ h2.landing-info-h2 {
 }
 
 /* Mobile-first styles */
-@media screen and (max-width: 499px) {
+/* Extra small phones (portrait) */
+@media screen and (max-width: 374px) {
+  .landing-intro {
+    top: 20%;
+    padding: 0 12px;
+  }
+  .landing-intro h2 {
+    font-size: 14px;
+    letter-spacing: 0.8px;
+  }
+  .landing-intro h1 {
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 0.8px;
+  }
+  .landing-info {
+    bottom: 70px;
+    padding: 0 12px;
+  }
+  .landing-info h3 {
+    font-size: 12px;
+    letter-spacing: 0.8px;
+  }
+  .landing-info h2 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-left: 8px;
+    margin-top: -12px;
+  }
+  h2.landing-info-h2 {
+    font-size: 28px;
+    margin-left: -2px;
+  }
+  .landing-circle1 {
+    width: 180px;
+    height: 180px;
+    opacity: 0.5;
+  }
+  .character-model {
+    height: 60vh;
+    bottom: 70px;
+  }
+}
+
+/* Small phones (iPhone SE, Android small) */
+@media screen and (min-width: 375px) and (max-width: 413px) {
   .landing-intro {
     top: 18%;
     padding: 0 15px;
@@ -292,6 +337,169 @@ h2.landing-info-h2 {
   .character-model {
     height: 65vh;
     bottom: 80px;
+  }
+}
+
+/* Android-specific optimizations */
+@media screen and (min-width: 360px) and (max-width: 412px) {
+  .landing-intro {
+    top: 15%;
+    padding: 0 16px;
+    min-height: 80px;
+  }
+  .landing-intro h2 {
+    font-size: 15px;
+    letter-spacing: 0.9px;
+    line-height: 18px;
+  }
+  .landing-intro h1 {
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 0.9px;
+    margin-top: 5px;
+  }
+  .landing-info {
+    bottom: 75px;
+    padding: 0 16px;
+    min-height: 70px;
+  }
+  .landing-info h3 {
+    font-size: 13px;
+    letter-spacing: 0.9px;
+    line-height: 16px;
+  }
+  .landing-info h2 {
+    font-size: 26px;
+    line-height: 30px;
+    margin-left: 9px;
+    margin-top: -13px;
+  }
+  h2.landing-info-h2 {
+    font-size: 30px;
+    margin-left: -2px;
+  }
+  .landing-circle1 {
+    width: 190px;
+    height: 190px;
+    opacity: 0.55;
+  }
+  .character-model {
+    height: 62vh;
+    bottom: 75px;
+    min-height: 350px;
+  }
+  
+  /* Android landscape mode adjustments */
+  @media (orientation: landscape) {
+    .landing-intro {
+      top: 10%;
+      min-height: 60px;
+    }
+    .landing-intro h1 {
+      font-size: 20px;
+      line-height: 23px;
+    }
+    .landing-info {
+      bottom: 50px;
+      min-height: 50px;
+    }
+    .landing-info h2 {
+      font-size: 24px;
+      line-height: 28px;
+    }
+    .character-model {
+      height: 50vh;
+      bottom: 50px;
+      min-height: 280px;
+    }
+  }
+}
+
+/* Medium phones (iPhone standard, Android medium) */
+@media screen and (min-width: 414px) and (max-width: 499px) {
+  .landing-intro {
+    top: 17%;
+    padding: 0 18px;
+  }
+  .landing-intro h2 {
+    font-size: 17px;
+    letter-spacing: 1px;
+  }
+  .landing-intro h1 {
+    font-size: 26px;
+    line-height: 28px;
+    letter-spacing: 1px;
+  }
+  .landing-info {
+    bottom: 85px;
+    padding: 0 18px;
+  }
+  .landing-info h3 {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  .landing-info h2 {
+    font-size: 30px;
+    line-height: 34px;
+    margin-left: 12px;
+    margin-top: -15px;
+  }
+  h2.landing-info-h2 {
+    font-size: 34px;
+    margin-left: -3px;
+  }
+  .landing-circle1 {
+    width: 220px;
+    height: 220px;
+    opacity: 0.6;
+  }
+  .character-model {
+    height: 68vh;
+    bottom: 85px;
+  }
+}
+
+/* Tablets and large phones (landscape) */
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  .landing-intro {
+    top: 15%;
+    padding: 0 20px;
+  }
+  .landing-intro h2 {
+    font-size: 19px;
+    letter-spacing: 1.2px;
+  }
+  .landing-intro h1 {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 1.2px;
+  }
+  .landing-info {
+    bottom: 60px;
+    padding: 0 20px;
+  }
+  .landing-info h3 {
+    font-size: 17px;
+    letter-spacing: 1.2px;
+  }
+  .landing-info h2 {
+    font-size: 36px;
+    line-height: 38px;
+    margin-left: 15px;
+    margin-top: -18px;
+  }
+  h2.landing-info-h2 {
+    font-size: 40px;
+    margin-left: -4px;
+  }
+  .landing-circle1 {
+    width: 250px;
+    height: 250px;
+    opacity: 0.7;
+  }
+  .character-model {
+    height: 75vh;
+    bottom: 60px;
   }
 }
 

@@ -49,7 +49,42 @@ a.contact-social {
 }
 
 /* Mobile-first responsive adjustments */
-@media only screen and (max-width: 499px) {
+/* Extra small phones (portrait) */
+@media only screen and (max-width: 374px) {
+  .contact-section {
+    padding: 12px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
+  .contact-section h3 {
+    font-size: 28px;
+  }
+  .contact-box h2 {
+    font-size: 14px;
+  }
+  .contact-box h5 {
+    font-size: 14px;
+    gap: 8px;
+  }
+  a.contact-social {
+    font-size: 16px;
+  }
+  .contact-flex {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .contact-flex p {
+    margin-bottom: 0px;
+    font-size: 0.9rem;
+  }
+  .contact-flex h4 {
+    margin-top: 12px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Small phones (iPhone SE, Android small) */
+@media only screen and (min-width: 375px) and (max-width: 413px) {
   .contact-section {
     padding: 15px;
     margin-top: 60px;
@@ -76,6 +111,169 @@ a.contact-social {
   }
   .contact-flex h4 {
     margin-top: 15px;
+  }
+}
+
+/* Android-specific optimizations */
+@media only screen and (min-width: 360px) and (max-width: 412px) {
+  .contact-section {
+    padding: 16px;
+    margin-top: 58px;
+    padding-bottom: 58px;
+    min-height: 400px;
+  }
+  .contact-section h3 {
+    font-size: 31px;
+    line-height: 36px;
+  }
+  .contact-box {
+    min-height: 80px;
+  }
+  .contact-box h2 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .contact-box h5 {
+    font-size: 15px;
+    line-height: 20px;
+    gap: 9px;
+  }
+  a.contact-social {
+    font-size: 17px;
+    padding: 8px;
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-flex {
+    flex-direction: column;
+    gap: 28px;
+  }
+  .contact-flex p {
+    margin-bottom: 0px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  .contact-flex h4 {
+    margin-top: 14px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  
+  /* Android landscape mode adjustments */
+  @media (orientation: landscape) {
+    .contact-section {
+      padding: 12px;
+      margin-top: 40px;
+      padding-bottom: 40px;
+      min-height: 300px;
+    }
+    .contact-section h3 {
+      font-size: 28px;
+    }
+    .contact-flex {
+      gap: 20px;
+    }
+    a.contact-social {
+      font-size: 16px;
+      min-height: 40px;
+      min-width: 40px;
+    }
+  }
+}
+
+/* Medium phones (iPhone standard, Android medium) */
+@media only screen and (min-width: 414px) and (max-width: 499px) {
+  .contact-section {
+    padding: 18px;
+    margin-top: 65px;
+    padding-bottom: 65px;
+  }
+  .contact-section h3 {
+    font-size: 34px;
+  }
+  .contact-box h2 {
+    font-size: 17px;
+  }
+  .contact-box h5 {
+    font-size: 17px;
+  }
+  a.contact-social {
+    font-size: 19px;
+  }
+  .contact-flex {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .contact-flex p {
+    margin-bottom: 0px;
+  }
+  .contact-flex h4 {
+    margin-top: 16px;
+  }
+}
+
+/* Tablets and large phones (landscape) */
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .contact-section {
+    padding: 20px;
+    margin-top: 70px;
+    padding-bottom: 70px;
+  }
+  .contact-section h3 {
+    font-size: 38px;
+  }
+  .contact-box h2 {
+    font-size: 18px;
+  }
+  .contact-box h5 {
+    font-size: 18px;
+  }
+  a.contact-social {
+    font-size: 20px;
+  }
+  .contact-flex {
+    flex-direction: column;
+    gap: 35px;
+  }
+  .contact-flex p {
+    margin-bottom: 0px;
+  }
+  .contact-flex h4 {
+    margin-top: 18px;
+  }
+}
+
+/* iPad and tablet portrait */
+@media only screen and (min-width: 768px) and (max-width: 899px) {
+  .contact-section {
+    padding: 25px;
+    margin-top: 45px;
+    padding-bottom: 55px;
+  }
+  .contact-section h3 {
+    font-size: 42px;
+  }
+  .contact-box h2 {
+    font-size: 19px;
+  }
+  .contact-box h5 {
+    font-size: 19px;
+  }
+  a.contact-social {
+    font-size: 21px;
+  }
+  .contact-flex {
+    flex-direction: column;
+    gap: 38px;
+  }
+  .contact-flex p {
+    margin-bottom: 0px;
+  }
+  .contact-flex h4 {
+    margin-top: 19px;
   }
 }
 @media only screen and (max-width: 1600px) {

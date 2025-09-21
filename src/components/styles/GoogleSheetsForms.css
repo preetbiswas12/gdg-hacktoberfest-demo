@@ -117,7 +117,235 @@ button[type="submit"]:disabled {
 }
 
 /* Mobile-first responsive adjustments */
-@media only screen and (max-width: 768px) {
+/* Extra small phones (portrait) */
+@media only screen and (max-width: 374px) {
+  .form-container {
+    padding: 1.25rem 0.5rem;
+  }
+  
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 100%;
+  }
+  
+  .left-section h2 {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+  
+  .left-section p {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+  
+  .input-wrapper input,
+  .input-wrapper textarea {
+    padding: 0.65rem 0.65rem 0.65rem 2rem;
+    font-size: 0.85rem;
+  }
+  
+  .input-icon {
+    left: 0.4rem;
+    font-size: 0.9rem;
+  }
+  
+  button[type="submit"] {
+    padding: 0.75rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Small phones (iPhone SE, Android small) */
+@media only screen and (min-width: 375px) and (max-width: 413px) {
+  .form-container {
+    padding: 1.5rem 0.75rem;
+  }
+  
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+    max-width: 100%;
+  }
+  
+  .left-section h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .left-section p {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+  
+  .input-wrapper input,
+  .input-wrapper textarea {
+    padding: 0.75rem 0.75rem 0.75rem 2.25rem;
+    font-size: 0.9rem;
+  }
+  
+  .input-icon {
+    left: 0.5rem;
+  }
+  
+  button[type="submit"] {
+    padding: 0.85rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Android-specific optimizations */
+@media only screen and (min-width: 360px) and (max-width: 412px) {
+  .form-container {
+    padding: 1.4rem 0.6rem;
+    min-height: 500px;
+  }
+  
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+    max-width: 100%;
+  }
+  
+  .left-section h2 {
+    font-size: 1.9rem;
+    text-align: center;
+    line-height: 1.2;
+  }
+  
+  .left-section p {
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 1.4;
+  }
+  
+  .input-wrapper {
+    min-height: 50px;
+  }
+  
+  .input-wrapper input,
+  .input-wrapper textarea {
+    padding: 0.7rem 0.7rem 0.7rem 2.1rem;
+    font-size: 0.88rem;
+    min-height: 44px;
+    border-radius: 10px;
+  }
+  
+  .input-wrapper textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  .input-icon {
+    left: 0.45rem;
+    font-size: 0.95rem;
+  }
+  
+  button[type="submit"] {
+    padding: 0.8rem;
+    font-size: 0.88rem;
+    min-height: 48px;
+    border-radius: 10px;
+  }
+  
+  /* Android landscape mode adjustments */
+  @media (orientation: landscape) {
+    .form-container {
+      padding: 1rem 0.5rem;
+      min-height: 350px;
+    }
+    
+    .form-grid {
+      gap: 1.2rem;
+    }
+    
+    .left-section h2 {
+      font-size: 1.7rem;
+    }
+    
+    .left-section p {
+      font-size: 0.85rem;
+    }
+    
+    .input-wrapper input,
+    .input-wrapper textarea {
+      padding: 0.6rem 0.6rem 0.6rem 1.9rem;
+      min-height: 40px;
+    }
+    
+    .input-wrapper textarea {
+      min-height: 80px;
+    }
+    
+    button[type="submit"] {
+      padding: 0.7rem;
+      min-height: 44px;
+    }
+  }
+}
+
+/* Medium phones (iPhone standard, Android medium) */
+@media only screen and (min-width: 414px) and (max-width: 499px) {
+  .form-container {
+    padding: 1.75rem 1rem;
+  }
+  
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 450px;
+  }
+  
+  .left-section h2 {
+    font-size: 2.25rem;
+    text-align: center;
+  }
+  
+  .left-section p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .input-wrapper input,
+  .input-wrapper textarea {
+    padding: 0.8rem 0.8rem 0.8rem 2.3rem;
+    font-size: 0.95rem;
+  }
+  
+  .input-icon {
+    left: 0.55rem;
+  }
+  
+  button[type="submit"] {
+    padding: 0.9rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Tablets and large phones (landscape) */
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .form-container {
+    padding: 2rem 1.25rem;
+  }
+  
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+    max-width: 500px;
+  }
+  
+  .left-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  
+  .left-section p {
+    font-size: 1.05rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .form-container {
     padding: 2rem 1rem;
   }
@@ -136,34 +364,5 @@ button[type="submit"]:disabled {
   .left-section p {
     font-size: 1rem;
     text-align: center;
-  }
-}
-
-@media only screen and (max-width: 499px) {
-  .form-container {
-    padding: 1.5rem 0.75rem;
-  }
-  
-  .left-section h2 {
-    font-size: 2rem;
-  }
-  
-  .left-section p {
-    font-size: 0.95rem;
-  }
-  
-  .input-wrapper input,
-  .input-wrapper textarea {
-    padding: 0.75rem 0.75rem 0.75rem 2.25rem;
-    font-size: 0.9rem;
-  }
-  
-  .input-icon {
-    left: 0.5rem;
-  }
-  
-  button[type="submit"] {
-    padding: 0.85rem;
-    font-size: 0.9rem;
   }
 }

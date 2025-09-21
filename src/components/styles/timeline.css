@@ -186,38 +186,212 @@
     width: calc(100% - 25px);
   }
 }
-@media only screen and (max-width: 600px) {
+/* Extra small phones (portrait) */
+@media only screen and (max-width: 374px) {
   .career-info {
     margin: 0;
   }
   .career-section h2 {
     width: 100%;
-    font-size: 45px;
-    line-height: 45px;
+    font-size: 35px;
+    line-height: 35px;
     margin-top: 0px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
   .career-info-in {
     gap: 0px;
   }
   .career-info h3 {
-    font-size: 33px;
+    font-size: 28px;
+  }
+  .career-info-in,
+  .career-info-box p {
+    padding-left: 4%;
+  }
+  .career-section {
+    padding: 50px 12px;
+    padding-top: 80px;
+    margin-top: -60px;
+    margin-bottom: 80px;
+    align-items: start;
+    place-items: inherit;
+    justify-content: left;
+  }
+  .career-info-box {
+    margin-bottom: 40px;
+  }
+  .career-info h4 {
+    font-size: 18px;
+    line-height: 20px;
+    width: auto;
+  }
+  .career-info h5 {
+    font-size: 14px;
+  }
+  .career-info-box p {
+    font-size: 12px;
+  }
+}
+
+/* Small phones (iPhone SE, Android small) */
+@media only screen and (min-width: 375px) and (max-width: 413px) {
+  .career-info {
+    margin: 0;
+  }
+  .career-section h2 {
+    width: 100%;
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 0px;
+    margin-bottom: 55px;
+  }
+  .career-info-in {
+    gap: 0px;
+  }
+  .career-info h3 {
+    font-size: 30px;
   }
   .career-info-in,
   .career-info-box p {
     padding-left: 5%;
   }
   .career-section {
-    padding: 60px 15px;
-    padding-top: 90px;
-    margin-top: -70px;
-    margin-bottom: 100px;
+    padding: 55px 15px;
+    padding-top: 85px;
+    margin-top: -65px;
+    margin-bottom: 90px;
     align-items: start;
     place-items: inherit;
     justify-content: left;
   }
   .career-info-box {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
+  }
+  .career-info h4 {
+    font-size: 19px;
+    line-height: 21px;
+    width: auto;
+  }
+  .career-info h5 {
+    font-size: 15px;
+  }
+  .career-info-box p {
+    font-size: 13px;
+  }
+}
+
+/* Android-specific optimizations */
+@media only screen and (min-width: 360px) and (max-width: 412px) {
+  .career-info {
+    margin: 0;
+  }
+  .career-section h2 {
+    width: 100%;
+    font-size: 39px;
+    line-height: 39px;
+    margin-top: 0px;
+    margin-bottom: 52px;
+  }
+  .career-info-in {
+    gap: 0px;
+    min-height: 80px;
+  }
+  .career-info h3 {
+    font-size: 29px;
+    line-height: 32px;
+  }
+  .career-info-in,
+  .career-info-box p {
+    padding-left: 4.5%;
+  }
+  .career-section {
+    padding: 52px 14px;
+    padding-top: 82px;
+    margin-top: -62px;
+    margin-bottom: 85px;
+    align-items: start;
+    place-items: inherit;
+    justify-content: left;
+    min-height: 500px;
+  }
+  .career-info-box {
+    margin-bottom: 42px;
+    min-height: 120px;
+  }
+  .career-info h4 {
+    font-size: 18px;
+    line-height: 20px;
+    width: auto;
+  }
+  .career-info h5 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .career-info-box p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  
+  /* Android landscape mode adjustments */
+  @media (orientation: landscape) {
+    .career-section {
+      padding: 30px 12px;
+      padding-top: 50px;
+      margin-top: -40px;
+      margin-bottom: 50px;
+      min-height: 350px;
+    }
+    .career-section h2 {
+      font-size: 35px;
+      line-height: 35px;
+      margin-bottom: 40px;
+    }
+    .career-info-box {
+      margin-bottom: 30px;
+      min-height: 80px;
+    }
+    .career-info h3 {
+      font-size: 26px;
+    }
+    .career-info h4 {
+      font-size: 16px;
+    }
+  }
+}
+
+/* Medium phones (iPhone standard, Android medium) */
+@media only screen and (min-width: 414px) and (max-width: 499px) {
+  .career-info {
+    margin: 0;
+  }
+  .career-section h2 {
+    width: 100%;
+    font-size: 42px;
+    line-height: 42px;
+    margin-top: 0px;
+    margin-bottom: 58px;
+  }
+  .career-info-in {
+    gap: 0px;
+  }
+  .career-info h3 {
+    font-size: 32px;
+  }
+  .career-info-in,
+  .career-info-box p {
+    padding-left: 5%;
+  }
+  .career-section {
+    padding: 58px 18px;
+    padding-top: 88px;
+    margin-top: -68px;
+    margin-bottom: 95px;
+    align-items: start;
+    place-items: inherit;
+    justify-content: left;
+  }
+  .career-info-box {
+    margin-bottom: 48px;
   }
   .career-info h4 {
     font-size: 20px;
@@ -229,5 +403,52 @@
   }
   .career-info-box p {
     font-size: 14px;
+  }
+}
+
+/* Tablets and large phones (landscape) */
+@media only screen and (min-width: 500px) and (max-width: 599px) {
+  .career-info {
+    margin: 0;
+  }
+  .career-section h2 {
+    width: 100%;
+    font-size: 48px;
+    line-height: 48px;
+    margin-top: 0px;
+    margin-bottom: 65px;
+  }
+  .career-info-in {
+    gap: 5px;
+  }
+  .career-info h3 {
+    font-size: 36px;
+  }
+  .career-info-in,
+  .career-info-box p {
+    padding-left: 6%;
+  }
+  .career-section {
+    padding: 65px 20px;
+    padding-top: 95px;
+    margin-top: -75px;
+    margin-bottom: 105px;
+    align-items: start;
+    place-items: inherit;
+    justify-content: left;
+  }
+  .career-info-box {
+    margin-bottom: 55px;
+  }
+  .career-info h4 {
+    font-size: 22px;
+    line-height: 24px;
+    width: auto;
+  }
+  .career-info h5 {
+    font-size: 18px;
+  }
+  .career-info-box p {
+    font-size: 15px;
   }
 }
