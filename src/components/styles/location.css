@@ -225,7 +225,7 @@
 
   .box-png {
     width: 400px; /* Maintain decent size */
-    height: 200px; /* Maintain aspect ratio */
+    height: 100px; /* Maintain aspect ratio */
   }
   
   .left-box .box-png {
